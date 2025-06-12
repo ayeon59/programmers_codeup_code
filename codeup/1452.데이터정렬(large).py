@@ -14,4 +14,4 @@ for i in range(n):
 
 for i in range(len(arr)):
     for j in range(arr[i]):
-        print(i, end=" ")
+        print(i)

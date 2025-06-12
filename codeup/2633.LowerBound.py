@@ -6,13 +6,12 @@ def binary_number(array,target,start,end):
     if start > end:
         return
     mid = (start+end)//2
-    if array[mid] > target :
-        binary_number(array,target,start,mid-1)
-    elif array[mid] < target:
-        binary_number(array,target,mid+1,end)
-    else :
+    if array[mid] >= target :
         result = mid
         binary_number(array,target,start,mid-1)
+    else:
+        binary_number(array,target,mid+1,end)
+    
 
 binary_number(a,k,0,n-1)
 
